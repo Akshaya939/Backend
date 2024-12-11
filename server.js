@@ -62,7 +62,7 @@ app.post("/api/contact", async (req, res) => {
 });
 
 // Start Server
-// const PORT = process.env.PORT || 3001;
-// app.listen(PORT, "0.0.0.0", () => {
-//   console.log(`Server is running on http://localhost:${PORT}`);
-// });
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
